@@ -7,8 +7,8 @@ export default function Header() {
     const path = useLocation().pathname;
   return (
     <Navbar className="border-b-2">
-      <Link to="/" className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white">
-        <span className="px-2 py-1 bg-gradient-to-r from-lime-900 via-lime-600 to-lime-300 rounded-lg text-white">
+      <Link to="/" className="self-center whitespace-nowrap text-m sm:text-xl font-semibold dark:text-white">
+        <span className="px-2 py-1 bg-gradient-to-r from-emerald-400 via-emerald-600 to-emerald-700 rounded-lg text-white">
           Impact
         </span>
         Play
@@ -32,7 +32,7 @@ export default function Header() {
         </Button>
 
         <Link to='/sign-in'>
-            <Button gradientDuoTone='greenToBlue'>
+            <Button gradientDuoTone='greenToBlue' outline>
                 Sign In
             </Button>
         </Link>
