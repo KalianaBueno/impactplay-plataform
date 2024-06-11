@@ -28,6 +28,7 @@ export const updateUser = async (req, res, next) => {
         }
         if (!req.body.username.match(/[a-zA-Z0-9]+$/)){
             return next(errorHandler(400, 'nome de usuário não deve conter caracteries especiais'));
+        }
     }
 
         try {
@@ -44,6 +45,6 @@ export const updateUser = async (req, res, next) => {
         } catch (error) {
             next(error);
         }
-    }
+    
 
 };
